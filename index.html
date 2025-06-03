@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authority Book Outline Templates | Ralph Publishers</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 50px 30px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .header .subtitle {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+        
+        .header .tagline {
+            font-size: 1.1rem;
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 10px;
+        }
+        
+        .content {
+            padding: 50px 30px;
+        }
+        
+        .intro-section {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .intro-section h2 {
+            color: #2c3e50;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        
+        .intro-section p {
+            font-size: 1.1rem;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .templates-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .template-card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 25px;
+            border: 2px solid #e9ecef;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+        }
+        
+        .template-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            border-color: #667eea;
+        }
+        
+        .template-card.active {
+            border-color: #667eea;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .template-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+        
+        .template-title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .template-subtitle {
+            font-size: 1rem;
+            margin-bottom: 15px;
+            opacity: 0.8;
+        }
+        
+        .template-description {
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        
+        .template-details {
+            display: none;
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            margin: 30px 0;
+            border: 2px solid #667eea;
+            animation: fadeIn 0.5s ease-in;
+        }
+        
+        .template-details.active {
+            display: block;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .template-details h3 {
+            color: #667eea;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        .title-framework {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #667eea;
+        }
+        
+        .title-framework h4 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .title-framework .example {
+            font-style: italic;
+            color: #667eea;
+            font-weight: 500;
+        }
+        
+        .chapter-outline {
+            margin: 30px 0;
+        }
+        
+        .part-section {
+            margin: 25px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        
+        .part-title {
+            color: #667eea;
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .chapter {
+            margin: 15px 0;
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            border-left: 3px solid #667eea;
+        }
+        
+        .chapter-title {
+            color: #2c3e50;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        
+        .chapter-content {
+            color: #555;
+            font-size: 0.95rem;
+        }
+        
+        .chapter-content ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        
+        .authority-tips {
+            background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+        
+        .authority-tips h4 {
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+        
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .tip-item {
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 8px;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .cta-btn {
+            background: #f1c40f;
+            color: #2c3e50;
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            display: inline-block;
+            transition: all 0.3s ease;
+            border: 3px solid #f1c40f;
+            margin: 20px 10px;
+        }
+        
+        .cta-btn:hover {
+            background: transparent;
+            color: #f1c40f;
+            transform: translateY(-3px);
+        }
+        
+        .download-btn {
+            background: #27ae60;
+            color: white;
+            border: 3px solid #27ae60;
+        }
+        
+        .download-btn:hover {
+            background: transparent;
+            color: #27ae60;
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            animation: fadeIn 0.3s ease;
+        }
+        
+        .modal-content {
+            background-color: white;
+            margin: 5% auto;
+            padding: 40px;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 500px;
+            position: relative;
+            animation: slideIn 0.3s ease;
+        }
+        
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            position: absolute;
+            right: 20px;
+            top: 15px;
+        }
+        
+        .close:hover {
+            color: #667eea;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #2c3e50;
+            font-weight: 500;
+        }
+        
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-group input:focus, .form-group select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        .submit-btn {
+            background: #667eea;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+        
+        .submit-btn:hover {
+            background: #5a6fd8;
+            transform: translateY(-2px);
+        }
+        
+        .modal h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        .modal p {
+            color: #666;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        @media (max-width: 768px) {
+            .templates-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .tips-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <script>
+        function showTemplate(templateId) {
+            // Hide all template details
+            const allDetails = document.querySelectorAll('.template-details');
+            allDetails.forEach(detail => {
+                detail.classList.remove('active');
+            });
+            
+            // Remove active class from all cards
+            const allCards = document.querySelectorAll('.template-card');
+            allCards.forEach(card => {
+                card.classList.remove('active');
+            });
+            
+            // Show selected template details
+            const selectedTemplate = document.getElementById(templateId);
+            if (selectedTemplate) {
+                selectedTemplate.classList.add('active');
+            }
+            
+            // Add active class to clicked card
+            event.target.closest('.template-card').classList.add('active');
+            
+            // Scroll to template details
+            selectedTemplate.scrollIntoView({ 
+                behavior: 'smooth', 
+                block: 'start' 
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📚 AUTHORITY BOOK OUTLINE TEMPLATES</h1>
+            <p class="subtitle">5 Proven Templates for Coaches Who Want to Write Authority-Building Books</p>
+            <div class="tagline">From The Write-to-Authority Protocol System</div>
+        </div>
+        
+        <div class="content">
+            <div class="intro-section">
+                <h2>Choose Your Authority Book Template</h2>
+                <p>Each template is designed to position coaches as THE go-to expert in their field. Select the one that matches your coaching style, story, and target audience. Click any template below to see the complete chapter-by-chapter breakdown.</p>
+            </div>
+            
+            <div class="templates-grid">
+                <div class="template-card" onclick="showTemplate('transformation')">
+                    <span class="template-icon">🚀</span>
+                    <div class="template-title">The Transformation Method</div>
+                    <div class="template-subtitle">Perfect for: Life coaches, business coaches, wellness coaches</div>
+                    <div class="template-description">Structure your proven methodology into a step-by-step transformation guide that positions you as the expert who gets results.</div>
+                </div>
+                
+                <div class="template-card" onclick="showTemplate('contrarian')">
+                    <span class="template-icon">⚡</span>
+                    <div class="template-title">The Contrarian Approach</div>
+                    <div class="template-subtitle">Perfect for: Coaches with unconventional methods</div>
+                    <div class="template-description">Challenge industry norms and position yourself as the disruptor who knows what really works when traditional methods fail.</div>
+                </div>
+                
+                <div class="template-card" onclick="showTemplate('strategic')">
+                    <span class="template-icon">🎯</span>
+                    <div class="template-title">The Strategic Framework</div>
+                    <div class="template-subtitle">Perfect for: Business coaches, strategy consultants</div>
+                    <div class="template-description">Showcase your business expertise through a comprehensive strategic framework that demonstrates thought leadership.</div>
+                </div>
+                
+                <div class="template-card" onclick="showTemplate('journey')">
+                    <span class="template-icon">🌟</span>
+                    <div class="template-title">The Personal Journey</div>
+                    <div class="template-subtitle">Perfect for: Coaches with powerful transformation stories</div>
+                    <div class="template-description">Turn your personal breakthrough into a roadmap others can follow, establishing you as someone who's been there and succeeded.</div>
+                </div>
+                
+                <div class="template-card" onclick="showTemplate('comprehensive')">
+                    <span class="template-icon">📖</span>
+                    <div class="template-title">The Comprehensive Guide</div>
+                    <div class="template-subtitle">Perfect for: Coaches who want to cover their entire methodology</div>
+                    <div class="template-description">Create the definitive resource in your field that covers everything your audience needs to know about your specialty.</div>
+                </div>
+            </div>
+            
+            <!-- Template Details Sections -->
+            <div id="transformation" class="template-details">
+                <h3>🚀 The Transformation Method Template</h3>
+                
+                <div class="title-framework">
+                    <h4>Book Title Framework:</h4>
+                    <p>"The [Your Method Name]: How [Target Audience] Can [Specific Transformation] in [Timeframe]"</p>
+                    <p class="example">Example: "The Clarity Code: How Overwhelmed Entrepreneurs Can Build Focused, Profitable Businesses in 90 Days"</p>
+                </div>
+                
+                <div class="chapter-outline">
+                    <div class="part-section">
+                        <div class="part-title">PART I: THE PROBLEM</div>
+                        <div class="chapter">
+                            <div class="chapter-title">Chapter 1: The [Problem] Crisis</div>
+                            <div class="chapter-content">
+                                <ul>
+                                    <li>Industry statistics and pain points</li>
+                                    <li>Why traditional approaches fail</li>
+                                    <li>Your unique perspective on the problem</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="chapter">
+                            <div class="chapter-title">Chapter 2: The Hidden [Obstacle]</div>
+                            <div class="chapter-content">
+                                <ul>
+                                    <li>The real reason people struggle</li>
+                                    <li>Myths and misconceptions</li>
+                                    <li>Your breakthrough insight</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="part-section">
+                        <div class="part-title">PART II: THE METHOD</div>
+                        <div class="chapter">
+                            <div class="chapter-title">Chapter 3: The [Your Method] Foundation</div>
+                            <div class="chapter-content">
+                                <ul>
+                                    <li>Origin story of your methodology</li>
+                                    <li>Core principles and philosophy</li>
+                                    <li>Why this approach works</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="chapter">
+                            <div class="chapter-title">Chapter 4: Phase 1 - [First Step]</div>
+                            <div class="chapter-content">
+                                <ul>
+                                    <li>Detailed breakdown of first phase</li>
+                                    <li>Tools and techniques</li>
+                                    <li>Real client example</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="chapter">
+                            <div class="chapter-title">Chapter 5: Phase 2 - [Second Step]</div>
+                            <div class="chapter-content">
+                                <ul>
+                                    <li>Second phase implementation</li>
+                                    <li>Common challenges and solutions</li>
+                                    <li>Case study</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="chapter">
+                            <div class="chapter-title">Chapter 6: Phase 3 - [Third Step]</div>
+                            <div class="chapter-content">
+                                <ul>
+                                    <li>Final phase execution</li>
+                                    <li>Integration strategies</li>
+                                    <li>Transformation story</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="part-section">
+                        <div class="part-title">PART III: THE RESULTS</div>
+                        <div class="chapter">
+                            <div class="chapter-title">Chapter 7: Sustaining Your [Outcome]</div>
+                            <div class="chapter-content">
+                                <ul>
+                                    <li>Maintenance strategies</li>
+                                    <li>Advanced techniques</li>
+                                    <li>Long-term vision</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="chapter">
+                            <div class="chapter-title">Chapter 8: Becoming a [Your Niche] Leader</div>
+                            <div class="chapter-content">
+                                <ul>
+                                    <li>Next-level applications</li>
+                                    <li>How to help others</li>
+                                    <li>Your ongoing journey</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="contrarian" class="template-details">
+                <h3>⚡ The Contrarian Approach Template</h3>
+                
+                <div class="title-framework">
+                    <h4>Book Title Framework:</h4>
+                    <p>"Why Everything You Know About [Topic] is Wrong: The [Your Approach] Way to [Desired Outcome]"</p>
+                    <p class="example">Example: "Why Everything You Know About Productivity is Wrong: The Simplicity Method to 10x Results"</p>
+                </div>
+                
+                <div class="chapter-outline">
+                    <div class="part-section">
+                        <div class="part-title">PART I: THE LIES</div>
+                        <div class="chapter">
+                            <div class="chapter-title">Chapter 1: The [Industry] Myth</div>
+                            <div class="chapter-content">
+                                <ul>
+                                    <li>Common beliefs that don't work</li>
+                                    <li>Your contrarian thesis</li>
+                                    <li>Evidence supporting your view</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="chapter">
+                            <div class="chapter-title">Chapter 2: Why [Traditional Method] Fails</div>
+                            <div class="chapter-content">
+                                <ul>
+                                    <li>Problems with conventional wisdom</li>
+                                    <li>Hidden costs and consequences</li>
+                                    <li>Your personal discovery story</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="part-section">
+                        <div class="part-title">PART II: THE TRUTH</div>
+                        <div class="chapter">
+                            <div class="chapter-title">Chapter 3: The [Your Method] Revelation</div>
+                            <div class="chapter-content">
+                                <ul>
+                                    <li>Your breakthrough moment</li>
+                                    <li>The science/logic behind your approach</li>
+                                    <li>Initial results and validation</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="chapter">
+                            <div class="chapter-title">Chapter 4: Principle 1 - [Core Truth]</div>
+                            <div class="chapter-content">
+                                <ul>
+                                    <li>First fundamental principle</li>
+                                    <li>How to implement</li>
+                                    <li>Client transformation story</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="chapter">
+                            <div class="chapter-title">Chapter 5: Principle 2 - [Core Truth]</div>
+                            <div class="chapter-content">
+                                <ul>
+                                    <li>Second fundamental principle</li>
+                                    <li>Practical application</li>
+                                    <li>Case study</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="chapter">
+                            <div class="chapter-title">Chapter 6: Principle 3 - [Core Truth]</div>
+                            <div class="chapter-content">
+                                <ul>
+                                    <li>Third fundamental principle</li>
+                                    <li>Advanced implementation</li>
+                                    <li>Results documentation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="part-section">
+                        <div class="part-title">PART III: THE TRANSFORMATION</div>
+                        <div class="chapter">
+                            <div class="chapter-title">Chapter 7: Your [Outcome] Blueprint</div>
+                            <div class="chapter-content">
+                                <ul>
+                                    <li>Step-by-step implementation guide</li>
+                                    <li>Troubleshooting common issues</li>
+                                    <li>Measuring progress</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="chapter">
+                            <div class="chapter-title">Chapter 8: Leading the [Revolution]</div>
+                            <div class="chapter-content">
+                                <ul>
+                                    <li>Becoming a change agent</li>
+                                    <li>Building a movement</li>
+                                    <li>Your continuing mission</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="strategic" class="template-details">
+                <h3>🎯 The Strategic Framework Template</h3>
+                
+                <div class="title-framework">
+                    <h4>Book Title Framework:</h4>
+                    <p>"The [Strategic Framework]: A [Your Background] Guide to [Specific Business Outcome]"</p>
+                    <p class="example">Example: "The Momentum Matrix: A Former CEO's Guide to Scaling Service Businesses Without Burnout"</p>
+                </div>
+                
+                <div class="chapter-outline">
+                    <div class="part-section">
+                        <div class="part-title">PART I: THE STRATEGY</div>
+                        <div class="chapter">
+                            <div class="chapter-title">Chapter 1: The [Framework] Overview</div>
+                            <div class="chapter-content">
+                                <ul>
+                                    <li>Your business background/credentials</li>
+                                    <li>Why this framework matters</li>
+                                    <li>The four pillars/components</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="chapter">
+                            <div class="chapter-title">Chapter 2: The [Current State] Assessment</div>
+                            <div class="chapter-content">
+                                <ul>
+                                    <li>Diagnostic tools and methods</li>
+                                    <li>Identifying core challenges</li>
+                                    <li>Setting strategic priorities</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="part-section">
+                        <div class="part-title">PART II: THE EXECUTION</div>
+                        <div class="chapter">
+                            <div class="chapter-title">Chapter 3: Pillar 1 - [Strategic Element]</div>
+                            <div class="chapter-content">
+                                <ul>
+                                    <li>First framework component</li>
+                                    <li>Implementation methodology</li>
+                                    <li>Business case study</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="chapter">
+                            <div class="chapter-title">Chapter 4: Pillar 2 - [Strategic Element]</div>
+                            <div class="chapter-content">
+                                <ul>
+                                    <li>Second framework component</li>
+                                    <li>Tools and processes</li>
+                                    <li>Client success story</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="chapter">
+                            <div class="chapter-title">Chapter 5: Pillar 3 - [Strategic Element]</div>
+                            <div class="chapter-content">
+                                <ul>
+                                    <li>Third framework component</li>
+                                    <li>Advanced strategies</li>
+                                    <li>Transformation example</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="chapter">
+                            <div class="chapter-title">Chapter 6: Pillar 4 - [Strategic Element]</div>
+                            <div class="chapter-content">
+                                <ul>
+                                    <li>Fourth framework component</li>
+                                    <li>Integration techniques</li>
+                                    <li>Results measurement</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="part-section">
+                        <div class="part-title">PART III: THE SCALE</div>
+                        <div class="chapter">
+                            <div class="chapter-title">Chapter 7: The [Framework] Implementation Plan</div>
+                            <div class="chapter-content">
+                                <ul>
+                                    <li>90-day action blueprint</li>
+                                    <li>Resource requirements</li>
+                                    <li>Success metrics</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="chapter">
+                            <div class="chapter-title">Chapter 8: Mastering [Your Expertise]</div>
+                            <div class="chapter-content">
+                                <ul>
+                                    <li>Advanced applications</li>
+                                    <li>Building your own system</li>
+                                    <li>Thought leadership development</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="journey" class="template-details">
+                <h3>🌟 The Personal Journey Template</h3>
+                
+                <div class="title-framework">
+                    <h4>Book Title Framework:</h4>
+                    <p>"From [Where You Were] to [Where You Are]: How [Your Journey] Can [Help Others Achieve Similar]"</p>
+                    <p class="example">Example: "From Burnout to Breakthrough: How My Corporate Escape Can Help You Build a Purpose-Driven Coaching Practice"</p>
+                </div>
+                
+                <div class="chapter-outline">
+                    <div class="part-section">
+                        <div class="part-title">PART I: THE DARKNESS</div>
+                        <div class="chapter">
+                            <div class="chapter-title">Chapter 1: My [Low Point] Story</div>
+                            <div class="chapter-content">
+                                <ul>
+                                    <li>Rock bottom moment</li>
+                                    <li>What led to the crisis</li>
+                                    <li>The wake-up call</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="chapter">
+                            <div class="chapter-title">Chapter 2: The [Problem] Everyone Faces</div>
+                            <div class="chapter-content">
+                                <ul>
+                                    <li>How your struggle is universal</li>
+                                    <li>Industry-wide issues</li>
+                                    <li>Why solutions don't work</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="part-section">
+                        <div class="part-title">PART II: THE JOURNEY</div>
+                        <div class="chapter">
+                            <div class="chapter-title">Chapter 3: The First [Breakthrough]</div>
+                            <div class="chapter-content">
+                                <ul>
+                                    <li>Initial insight or change</li>
+                                    <li>First steps taken</li>
+                                    <li>Early challenges</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="chapter">
+                            <div class="chapter-title">Chapter 4: Learning [Key Lesson 1]</div>
+                            <div class="chapter-content">
+                                <ul>
+                                    <li>Major learning from your journey</li>
+                                    <li>How you applied it</li>
+                                    <li>Results achieved</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="chapter">
+                            <div class="chapter-title">Chapter 5: Discovering [Key Lesson 2]</div>
+                            <div class="chapter-content">
+                                <ul>
+                                    <li>Second major insight</li>
+                                    <li>Implementation story</li>
+                                    <li>Transformation evidence</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="chapter">
+                            <div class="chapter-title">Chapter 6: Mastering [Key Lesson 3]</div>
+                            <div class="chapter-content">
+                                <ul>
+                                    <li>Final major learning</li>
+                                    <li>Integration process</li>
+                                    <li>Life change documentation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="part-section">
+                        <div class="part-title">PART III: THE TRANSFORMATION</div>
+                        <div class="chapter">
+                            <div class="chapter-title">Chapter 7: Your [Transformation] Roadmap</div>
+                            <div class="chapter-content">
+                                <ul>
+                                    <li>Step-by-step guide for others</li>
+                                    <li>Avoiding common pitfalls</li>
+                                    <li>Accelerating the process</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="chapter">
+                            <div class="chapter-title">Chapter 8: Living [Your New Reality]</div>
+                            <div class="chapter-content">
+                                <ul>
+                                    <li>Current life/business state</li>
+                                    <li>Ongoing growth</li>
+                                    <li>How readers can follow your path</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="comprehensive" class="template-details">
+                <h3>📖 The Comprehensive Guide Template</h3>
+                
+                <div class="title-framework">
+                    <h4>Book Title Framework:</h4>
+                    <p>"The Complete Guide to [Your Specialty]: Everything [Target Audience] Needs to [Achieve Specific Outcome]"</p>
+                    <p class="example">Example: "The Complete Guide to Executive Presence: Everything Emerging Leaders Need to Command Respect and Influence"</p>
+                </div>
+                
+                <div class="chapter-outline">
+                    <div class="part-section">
+                        <div class="part-title">PART I: FOUNDATIONS</div>
+                        <div class="chapter">
+                            <div class="chapter-title">Chapter 1: Understanding [Your Specialty]</div>
+                            <div class="chapter-content">
+                                <ul>
+                                    <li>Definitions and core concepts</li>
+                                    <li>Why it matters in today's world</li>
+                                    <li>Your unique perspective</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="chapter">
+                            <div class="chapter-title">Chapter 2: The [Your Approach] Method</div>
+                            <div class="chapter-content">
+                                <ul>
+                                    <li>Your systematic approach</li>
+                                    <li>Key principles and pillars</li>
+                                    <li>Success framework overview</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="part-section">
+                        <div class="part-title">PART II: BUILDING BLOCKS</div>
+                        <div class="chapter">
+                            <div class="chapter-title">Chapter 3: [Fundamental Skill 1]</div>
+                            <div class="chapter-content">
+                                <ul>
+                                    <li>First essential capability</li>
+                                    <li>Development strategies</li>
+                                    <li>Practice exercises</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="chapter">
+                            <div class="chapter-title">Chapter 4: [Fundamental Skill 2]</div>
+                            <div class="chapter-content">
+                                <ul>
+                                    <li>Second essential capability</li>
+                                    <li>Implementation techniques</li>
+                                    <li>Real-world applications</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="chapter">
+                            <div class="chapter-title">Chapter 5: [Fundamental Skill 3]</div>
+                            <div class="chapter-content">
+                                <ul>
+                                    <li>Third essential capability</li>
+                                    <li>Advanced strategies</li>
+                                    <li>Mastery indicators</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="part-section">
+                        <div class="part-title">PART III: INTEGRATION</div>
+                        <div class="chapter">
+                            <div class="chapter-title">Chapter 6: [Advanced Application 1]</div>
+                            <div class="chapter-content">
+                                <ul>
+                                    <li>Complex scenarios</li>
+                                    <li>Integration strategies</li>
+                                    <li>Case studies</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="chapter">
+                            <div class="chapter-title">Chapter 7: [Advanced Application 2]</div>
+                            <div class="chapter-content">
+                                <ul>
+                                    <li>Challenging situations</li>
+                                    <li>Problem-solving approaches</li>
+                                    <li>Success stories</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="part-section">
+                        <div class="part-title">PART IV: MASTERY</div>
+                        <div class="chapter">
+                            <div class="chapter-title">Chapter 8: Becoming a [Expert Level]</div>
+                            <div class="chapter-content">
+                                <ul>
+                                    <li>Mastery characteristics</li>
+                                    <li>Continuous improvement</li>
+                                    <li>Leading others</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="chapter">
+                            <div class="chapter-title">Chapter 9: Your [Specialty] Legacy</div>
+                            <div class="chapter-content">
+                                <ul>
+                                    <li>Long-term vision</li>
+                                    <li>Impact creation</li>
+                                    <li>Thought leadership</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="authority-tips">
+                <h4>🔥 Authority-Building Elements to Include in Every Chapter:</h4>
+                <div class="tips-grid">
+                    <div class="tip-item">
+                        <strong>Opening Hook:</strong> Compelling story or statistic
+                    </div>
+                    <div class="tip-item">
+                        <strong>Authority Markers:</strong> Your credentials/experience
+                    </div>
+                    <div class="tip-item">
+                        <strong>Client Success Stories:</strong> Anonymized case studies
+                    </div>
+                    <div class="tip-item">
+                        <strong>Actionable Content:</strong> Specific tools and techniques
+                    </div>
+                    <div class="tip-item">
+                        <strong>Thought Leadership:</strong> Your unique insights
+                    </div>
+                    <div class="tip-item">
+                        <strong>Call to Action:</strong> Next steps for readers
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-section">
+                <h2>🚀 Ready to Write Your Authority Book?</h2>
+                <p style="font-size: 1.2rem; margin-bottom: 25px;">These templates are just the beginning. The Write-to-Authority Protocol provides the complete system for transforming coaches into recognized thought leaders.</p>
+                
+                <a href="https://calendly.com/raphael12/discoverycall" class="cta-btn">
+                    📅 BOOK DISCOVERY CALL
+                </a>
+                
+                <a href="https://mailchi.mp/ralphadvisory/the-write-to-authority-template" target="_blank" class="cta-btn download-btn">
+                    📥 GET FREE PDF TEMPLATES
+                </a>
+            </div>
+            
+            <!-- Download Modal -->
+            <div id="downloadModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeDownloadModal()">&times;</span>
+                    <h3>📚 Get Your Free Book Outline Templates</h3>
+                    <p>Enter your details below and we'll send you all 5 professional templates instantly!</p>
+                    
+                    <form id="downloadForm" onsubmit="handleDownload(event)">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="coachingType">What type of coach are you?</label>
+                            <select id="coachingType" name="coachingType">
+                                <option value="">Select one...</option>
+                                <option value="life">Life Coach</option>
+                                <option value="business">Business Coach</option>
+                                <option value="wellness">Wellness Coach</option>
+                                <option value="career">Career Coach</option>
+                                <option value="relationship">Relationship Coach</option>
+                                <option value="executive">Executive Coach</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            📥 SEND ME THE TEMPLATES
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin: 30px 0; color: #666;">
+                <p>© Ralph Publishers - The Write-to-Authority Protocol</p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function openDownloadModal() {
+            document.getElementById('downloadModal').style.display = 'block';
+        }
+        
+        function closeDownloadModal() {
+            document.getElementById('downloadModal').style.display = 'none';
+        }
+        
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('downloadModal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+        
+        function handleDownload(event) {
+            event.preventDefault();
+            
+            // Show loading state
+            const submitBtn = event.target.querySelector('.submit-btn');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '📤 SENDING...';
+            submitBtn.disabled = true;
+            
+            // Get form data
+            const formData = new FormData(event.target);
+            const firstName = formData.get('firstName');
+            const email = formData.get('email');
+            const coachingType = formData.get('coachingType');
+            
+            // In a real setup, this would submit to Mailchimp
+            // For now, we'll simulate the process
+            
+            setTimeout(() => {
+                // Simulate successful submission
+                alert(`🎉 Success! Check your email ${email} for the download link.\n\nWe've sent all 5 templates plus bonus authority-building tips!`);
+                
+                // Reset button
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+                
+                // Close modal and reset form
+                closeDownloadModal();
+                event.target.reset();
+                
+                // Optional: Track the conversion
+                // gtag('event', 'conversion', {'send_to': 'YOUR_CONVERSION_ID'});
+                
+            }, 2000);
+            
+            // REPLACE THE ABOVE WITH ACTUAL MAILCHIMP SUBMISSION
+            // Once you get your Mailchimp form code, replace this function with:
+            // 1. Submit data to Mailchimp endpoint
+            // 2. Handle success/error responses
+            // 3. Show appropriate messages
+        }
+        
+        function downloadTemplates() {
+            window.open('https://mailchi.mp/ralphadvisory/the-write-to-authority-template', '_blank');
+        }
+    </script>
+</body>
+</html>
